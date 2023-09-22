@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="logo" href="logo2.png" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="logo2.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Personal Porfolio Website</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <nav>
+        <img class="logo" src="logo2.png" alt="">
+        <ul id="sidemenu">
+            <li> <a class="js-nav-bar" href="#home">Home</a></li>
+            <li> <a class="js-nav-bar"  href="#about">About</a></li>
+            <li> <a class="js-nav-bar" href="#services">Services</a></li>
+            <li> <a class="js-nav-bar" href="#portfolio">Portfolio</a></li>
+            <li> <a class="js-nav-bar"  href="#contact">Contact</a></li> 
+            <i class="fa-solid close-menu-icon fas fa-circle-xmark" ></i>
+        </ul>
+        <i  class="fa-solid fas open-menu-icon fa-bars"></i>
+        <img src="moon.png" alt="" id="icon">
+    </nav>
+
+    
+    <div id="home">
+        <div class="hero-section">
+            <img id="profile-of-sasu" src="zazake.jpg" alt="">
+            <div class="header-text header-text-dark">
+                <p>Front-end Web Developer</p>
+                <h1>Meet <span>Biruk Amanuel </span></h1>
+                <h1>Your future best friend</h1>
+            </div>
+        </div>
+    </div>
+    
+        
+   
+   
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="sasuk2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    
+                    <p>I'm Biruk Amanuel, a front-end web developer from Hawassa, Ethiopia. I specialize in creating 
+                    visually appealing and user-friendly websites. With expertise in HTML, CSS, and JavaScript, I 
+                    strive to deliver high-quality solutions that exceed client expectations. I prioritize responsive 
+                    design and seamless user experiences. Let's collaborate to bring your vision to life on the web.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developement</span><br>Creating a responsive website</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - current</span><br>Developing responsive website</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Free Code Camp</li>
+                            <li><span>2023</span><br>2nd year Information system, Bachlore degree</li>
+                            <li><span>2023</span><br>Udemy Full Stack Web Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+
+            <div class="services-list js-services-list">
+                
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list js-work-list">
+                
+            </div>
+            <a class="btn" href="#">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>su1975165@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 0975824359</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://t.me/Sasu_from_the_hood"><i class="fa-solid fa-paper-plane"></i></a>
+                    </div>
+                    <a class="btn btn2"  href="img/CV.pdf" download>Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="portfolio.js"></script>
+    <script src="service.js"></script>
+    <script src="showCase.js"></script>
+</body>
+</html>

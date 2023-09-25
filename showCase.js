@@ -7,7 +7,7 @@ const showCases = [/*{
   projectName: 'Messay International Hotel',
   discription: 'The website helps you to book a room that you want and to order a food from where ever you are'
 },{
-  image: 'coming soon.avif',
+  image: 'HawassaMart.png',
   projectName: 'Hawassa Mart',
   discription: 'The web helps you to buy any kind of product that you want for your face care routien and to get your self a phone'
 }];

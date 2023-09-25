@@ -1,8 +1,8 @@
-const showCases = [{
+const showCases = [/*{
   image: 'lightburger.png',
   projectName: 'Light Burger',
   discription: 'The web helps you to order any kind of food that are on the menu list we have on this web'
-}, {
+},*/ {
   image: 'MessayHotel.png',
   projectName: 'Messay International Hotel',
   discription: 'The website helps you to book a room that you want and to order a food from where ever you are'

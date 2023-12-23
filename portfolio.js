@@ -1,17 +1,20 @@
 // About Me section starts
-let tabLinks = document.getElementsByClassName("tab-links");
-let tabContents = document.getElementsByClassName("tab-contents");
+const tabTitle = document.querySelector(".tab-titles");
+const tabLink = document.querySelectorAll(".tab-links");
+const tabContent = document.querySelectorAll(".tab-contents");
 
-function opentab(tabname){
-    for(tabLink of tabLinks){
-        tabLink.classList.remove("active-link");
-    }
-    for(tabContent of tabContents){
-        tabContent.classList.remove("active-tab");
-    }
-    event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add('active-tab');
-}
+tabTitle.addEventListener("click", function (e) {
+  const clicked = e.target;
+  if (clicked.classList.contains("tab-links")) {
+    tabLink.forEach((t) => t.classList.remove("active-link"));
+    clicked.classList.add("active-link");
+    tabContent.forEach((t) => t.classList.remove("active-tab"));
+
+    document
+      .querySelector(`.tab-contents-${clicked.dataset.tab}`)
+      .classList.add("active-tab");
+  }
+});
 // About Me section ends
 
 // The sidebar section starts

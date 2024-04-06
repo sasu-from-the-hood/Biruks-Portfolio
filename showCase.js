@@ -29,7 +29,7 @@ showCases.forEach((showCase)=>{
     <div class="layer">
         <h3>${showCase.projectName}</h3>
         <p>${showCase.discription}</p>
-        <a href=`${showCase.link}`> <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i> </a>
+        <a href=${showCase.link}> <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i> </a>
     </div>
   </div>
   `;

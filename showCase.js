@@ -13,6 +13,11 @@ const showCases = [{
   projectName: 'Hawassa Mart',
   discription: 'The web helps you to buy any kind of product that you want for your face care routien and to get your self a phone',
   link: 'https://hawassa-mart.vercel.app/'
+},{
+  image: 'sun-bank.png',
+  projectName: 'Sun-mobile-banking',
+  discription: 'This website is made for mobile banking system so people can withdraw money just using their phone and use it as a paymentgate way',
+  link: 'https://sun-mobile-banking.vercel.app/'
 }];
 
 
